@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  margin: 0;
+}
+
+#header {
+  display: table;
+  width: 100%;
+}
+
+.left-box {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.logo-box {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  height: 80px;
+  padding-left: 24px;
+  padding-right: 8px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.carrot-box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.search-box {
+  display: table-cell;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 450px;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 16px 16px;
+}
+
+.right-box {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.search-bar {
+  height: 48px;
+  font-size: 17px;
+  font-weight: 800;
+  margin-left: 16px;
+  width: 394px;
+  float: left;
+  background-color: transparent;
+}
+
+svg {
+  height: 1em;
+  width: 1em;
+  display: block;
+}
+
+.logo {
+  font-size: 34px;
+  fill: rgb(145, 70, 105);
+}
+
+.carrot {
+  font-size: 9px;
+  fill: #767676;
+}
+
+.magnifying-glass {
+  height: 48px;
+  font-weight: 600;
+  font-size: 18px;
+  fill: #484848;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: 20px;
+  float: left;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.navigation {
+  display: table-cell;
+  float: right;
+  padding: 28px 18px;
+  line-height: 1.43;
+  font-size: 14px;
+  font-weight: 400;
+  color: #484848;
+}

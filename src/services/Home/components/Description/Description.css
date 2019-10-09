@@ -1,0 +1,95 @@
+.full-description-box {
+  height: 240px;
+  width: 100%;
+  /* background-color: lightgreen; */
+  position: relative;
+  float: left;
+}
+
+.left-description-box {
+  height: 240px;
+  width: 45%;
+  /* background-color: lightblue; */
+  margin: 64px 128px;
+  float: left;
+}
+
+.description-accommodations {
+  display: table;
+  font-weight: 800;
+  font-size: 14px;
+  word-wrap: break-word;
+  line-height: 1.29em;
+  color: #484848;
+}
+
+.description-blueprint {
+  display: table-cell;
+  padding: 10px;
+}
+
+.room-description {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75em;
+  color: #484848;
+  word-wrap: break-word;
+}
+
+.right-description-box {
+  height: 240px;
+  width: 30%;
+  /* background-color: lightcoral; */
+  margin: 64px 128px 64px 0px;
+  float: right;
+  position: relative;
+}
+
+.review-photo-description-box {
+  width: 30%;
+  height: 240px;
+  /* background-color: white; */
+  position: relative;
+}
+
+.review-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 0px 15%;
+}
+
+.review-picture-medal {
+  height: 32px;
+  width: 32px;
+  right: 35px;
+  top: 68px;
+  fill: currentColor;
+  position: absolute;
+}
+
+.review-commentary-box {
+  width: 70%;
+  height: 240px;
+  /* background-color: yellow; */
+  top: 0px;
+  left: 30%;
+  position: absolute;
+}
+
+.quote-comment {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75em;
+  color: #484848;
+  margin: 5px 0px 15px 0px;
+}
+
+.host-comment {
+  font-size: 14px;
+  font-weight: 800;
+  color: #484848;
+  line-height: 1.29em;
+  word-wrap: break-word;
+}

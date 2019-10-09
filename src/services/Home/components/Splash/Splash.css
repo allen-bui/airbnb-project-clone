@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  margin: 0;
+}
+
+.left-splash {
+  width: 31%;
+  height: 686px;
+  padding-left: 8px;
+  padding-right: 8px;
+  float: left;
+  position: relative;
+  display: block;
+  margin: 2px 8px 8px 16px;
+}
+
+.left-splash-inner {
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #F2F2F2;
+  color: #484848;
+  /* font-size: 28px;
+  line-height: 34px;
+  max-height: 204px; */
+}
+
+.logo-div {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #484848;
+}
+
+.airbnb-plus-logo {
+  fill: rgb(145, 70, 105);
+  height: 44px;
+  width: 85px;
+}
+
+.splash-text {
+  font-size: 40px;
+  line-height: 50px;
+  max-height: 204px;
+  margin: 24px 0px;
+}
+
+.right-splash {
+  width: 65%;
+  height: 686px;
+  padding-left: 8px;
+  padding-right: 8px;
+  float: left;
+  position: relative;
+  display: block;
+  margin: 2px 16px 8px 8px;
+}
+
+.right-splash-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  /* background-image: url('https://design-milk.com/images/2013/04/House-Abo-Nico-VD-Meulen-1.jpg') */
+  /* border: 1px solid #EBEBEB; */
+  /* font-size: 28px;
+  line-height: 34px;
+  max-height: 204px; */
+}
+
+.splash-home-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Heart Button */
+
+.heart-button-div {
+  top: 24px;
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+  position: absolute;
+  right: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.14);
+}
+
+.heart-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.heart-icon {
+  font-size: 17px;
+  fill-opacity: 0;
+  stroke: #484848;
+  stroke-width: 1.5;
+  margin: 0 auto;
+}
+
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Tour-This-Home Button */
+
+.tour-button-div {
+  bottom: 24px;
+  width: 168px;
+  height: 36px;
+  margin-left: 16px;
+  position: absolute;
+  right: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.14);
+}
+
+.tour-button {
+  width: 168px;
+  height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tour-icon {
+  height: 15px;
+  width: 15px;
+  display: block;
+  margin-left: 6px;
+}
+
+.tour-button-left-div {
+  float: left;
+  margin-top: 1px;
+}
+
+.tour-button-right-div {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5em;
+  letter-spacing: 0.083em;
+  color: #484848;
+  float: auto;
+}
