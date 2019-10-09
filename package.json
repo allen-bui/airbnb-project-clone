@@ -4,7 +4,7 @@
   "description": "airbnb front end capstone",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode production",
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/server.js",
     "seed": "node db/seed.js",
