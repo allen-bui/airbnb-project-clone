@@ -8,7 +8,8 @@
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon server/server.js",
     "seed": "node db/seed.js",
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
