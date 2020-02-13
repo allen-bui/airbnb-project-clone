@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { randomize } from './assets/helper-functions.js';
 
 // Services
 import Home from './services/Home/Home.jsx';
@@ -105,21 +106,6 @@ class App extends React.Component {
       }
     }
 
-    function randomize(arr, count) {
-      const result = [arr[0]];
-      const copyArr = arr.slice(1);
-      let i = 0;
-      let int;
-
-      while (i < count) {
-        int = Math.floor(Math.random() * copyArr.length);
-        result.push(copyArr[int]);
-        copyArr.splice(int, 1);
-        i++;
-      }
-      return result;
-    }
-
     this.setState({
       photos: {
         home: randomize(home, 1),
@@ -133,122 +119,6 @@ class App extends React.Component {
         pets: randomize(pets, 3),
       },
     });
-
-    // fetch('http://localhost:3000/retrieve', {
-    //   method: 'GET',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     const home = [];
-    //     const livingRoom = [];
-    //     const kitchen = [];
-    //     const bedroom = [];
-    //     const bathroom = [];
-    //     const interior = [];
-    //     const other = [];
-    //     const backyard = [];
-    //     const pets = [];
-    //     const photoSet = (() => {
-    //       const randomSet = [
-    //         'zero',
-    //         'one',
-    //         'two',
-    //         'three',
-    //         'four',
-    //         'five',
-    //         'six',
-    //         'seven',
-    //         'eight',
-    //         'nine',
-    //       ];
-    //       return randomSet[Math.floor(Math.random() * randomSet.length)];
-    //     })();
-
-    //     for (let i = 0; i < data.length; i++) {
-    //       switch (data[i].tag) {
-    //         case 'home':
-    //           data[i].photo_set === photoSet
-    //           ? home.unshift(data[i])
-    //           : home.push(data[i]);
-    //           continue;
-    //         case 'living room':
-    //           data[i].photo_set === photoSet
-    //           ? livingRoom.unshift(data[i])
-    //           : livingRoom.push(data[i]);
-    //           continue;
-    //         case 'kitchen':
-    //           data[i].photo_set === photoSet
-    //           ? kitchen.unshift(data[i])
-    //           : kitchen.push(data[i]);
-    //           continue;
-    //         case 'bedroom':
-    //           data[i].photo_set === photoSet
-    //           ? bedroom.unshift(data[i])
-    //           : bedroom.push(data[i]);
-    //           continue;
-    //         case 'bathroom':
-    //           data[i].photo_set === photoSet
-    //           ? bathroom.unshift(data[i])
-    //           : bathroom.push(data[i]);
-    //           continue;
-    //         case 'interior':
-    //           data[i].photo_set === photoSet
-    //           ? interior.unshift(data[i])
-    //           : interior.push(data[i]);
-    //           continue;
-    //         case 'other':
-    //           data[i].photo_set === photoSet
-    //           ? other.unshift(data[i])
-    //           : other.push(data[i]);
-    //           continue;
-    //         case 'backyard':
-    //           data[i].photo_set === photoSet
-    //           ? backyard.unshift(data[i])
-    //           : backyard.push(data[i]);
-    //           continue;
-    //         case 'pets':
-    //           data[i].photo_set === photoSet
-    //           ? pets.unshift(data[i])
-    //           : pets.push(data[i]);
-    //           continue;
-    //       }
-    //     }
-
-    //     function randomize(arr, count) {
-    //       const result = [arr[0]];
-    //       const copyArr = arr.slice(1);
-    //       let i = 0;
-    //       let int;
-
-    //       while (i < count) {
-    //         int = Math.floor(Math.random() * copyArr.length);
-    //         result.push(copyArr[int]);
-    //         copyArr.splice(int, 1);
-    //         i++;
-    //       }
-    //       return result;
-    //     }
-
-    //     this.setState({
-    //       photos: {
-    //         home: randomize(home, 1),
-    //         livingRoom: randomize(livingRoom, 5),
-    //         kitchen: randomize(kitchen, 5),
-    //         bedroom: randomize(bedroom, 4),
-    //         bathroom: randomize(bathroom, 3),
-    //         interior: randomize(interior, 4),
-    //         other: randomize(other, 3),
-    //         backyard: randomize(backyard, 3),
-    //         pets: randomize(pets, 3),
-    //       },
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     console.log(`[Error]: ${error}`);
-    //   });
   }
 
   onClick(room) {
