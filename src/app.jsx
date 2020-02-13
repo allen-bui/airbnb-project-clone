@@ -4,7 +4,7 @@ import { randomize } from './assets/helper-functions.js';
 // Services
 import Home from './services/Home/Home.jsx';
 import Photos from './services/Photos/Photos.jsx';
-import AirbnbPhotos from './airbnbPhotoData.js';
+import AirbnbPhotos from './assets/airbnbPhotoData.js';
 
 export default class App extends React.Component {
 
