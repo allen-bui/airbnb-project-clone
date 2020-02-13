@@ -11,12 +11,13 @@ Please check out https://airbnb-project-clone-allen-bui.netlify.com/ if you'd li
 * Click the Search Bar
 * Click the Heart
 * Click the 'Tour this home' button
-* Click the photos (it takes you directly to where you need to go!)
+* Click the photos (it takes you directly to the specified room)
 
 # Tech Stack
 
 * JavaScript
 * React
 * CSS Grid
+* Webpack & Babel
 * Unsplash Photo API
 * ...and a little bit of creativity (ask me about this one)
